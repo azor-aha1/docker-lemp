@@ -9,7 +9,7 @@ docker compose up -d
 ```
 2. Add to hosts file:
 ```
-   127.0.0.1 my-server.home
+127.0.0.1 my-server.home
 ```
 
 ## Show that container is working
