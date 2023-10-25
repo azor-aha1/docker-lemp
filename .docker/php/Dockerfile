@@ -8,7 +8,8 @@ RUN apt install -y openssl curl git p7zip-full nano
 
 RUN docker-php-ext-configure pcntl --enable-pcntl \
   && docker-php-ext-install \
-    pcntl
+    pcntl \
+    pdo_mysql
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
